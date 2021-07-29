@@ -1,3 +1,9 @@
+# Created by Mathijs van Driel 
+# Created on 27.6.2021 
+# Version 1 
+# Sequence 1
+# Purpose:..
+
 import time
 def level (question): 
   valid=False 
@@ -24,12 +30,13 @@ def level (question):
       time.sleep(.5) 
       print("3")  
 
-
+# Sequence 2 
+# Purpose: This sequence asks the user for a name and stores it as a variable
 print("Hi there!") 
 time.sleep(1) 
 print("What is your fantastic name?") 
-n = input () 
-print("Kia Ora " + n)  
+name = input () 
+print("Kia Ora " + name)  
 time.sleep(.5) 
 print("Today we are going to learn Te Reo Maaori!") 
 time.sleep(1.5)
@@ -42,19 +49,42 @@ if played_before == "1":
  time.sleep(1.5) 
  print("To start off, we will learn colours.") 
  time.sleep(1.5) 
+ 
  print("What colour is red in Te Reo Maori?")  
  red = input()
  if red.lower() == 'whero': 
-   print("thats correct " + n)
+   print("thats correct " + name)
    print("Lets see what other colours you know!") 
  else: 
    print("hmm.. you didnt seem to get that one quite right, the correct answer is 'whero'") 
-   time.sleep(2) 
-   print("Now tell me, what colour is red in Te Reo Maaori?")
-   if red.lower() == 'whero': 
-     print("Good job, try to remember that one for next time") 
-     time.sleep(1.5) 
+   time.sleep(.5) 
+   print("Try toremember that one for next time") 
+   time.sleep(1.5) 
+   
    print("what colour is yellow in Te Reo Maaori?")
+   yellow = input()
+ if yellow.lower() == 'kowhai': 
+   print("Wow! You know your stuff!") 
+   print("Lets keep going") 
+ else: 
+   print("The correct answer is Kowhai ") 
+   
+   
+   print("what colour is green in Te Reo Maaori?")
+   green = input() 
+ if green.lower() == 'kakariki': 
+   print("Correct") 
+ else: 
+     print("Green is Kakariki in Te Reo Maaori")  
+
+     print("what colour is orange in Te Reo Maaori?")
+   orange = input() 
+ if orange.lower() == 'karaka': 
+   print("Correct") 
+ else: 
+     print("The colour orange in te reo Maori is know as kowhai") 
+  
+
   
 
 
@@ -63,8 +93,10 @@ if played_before == "1":
 
 
 
+
 elif played_before == "2": 
-  print("no judgement here") 
+  print("You have selected the intermediate difficulty for this subject!") 
+
   
 
 elif played_before == "3": 
