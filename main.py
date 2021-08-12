@@ -44,7 +44,7 @@ played_before = level("What difficulty would fit you best, 1, 2 or 3" + "\n")
 
 
 
-list = [ "What colour is red in Te Reo Maori?", "What colour is yellow in Te Reo Maaori?","What colour is green in Te Reo Maaori?", "What colour is orange in Te Reo Maaori?"]
+list = [ "What colour is red in Te Reo Maori?", "What colour is yellow in Te Reo Maaori?","What colour is green in Te Reo Maaori?", "What colour is orange in Te Reo Maaori?", "What colour is black in Te reo Maaori?"]
 
 if played_before == "1": 
  print("Ok! Today we will be learning the basics of the language!") 
@@ -52,7 +52,7 @@ if played_before == "1":
  print("To start off, we will learn colours.") 
  time.sleep(1.5) 
  
- print(list[1]) 
+ print(list[0]) 
  red = input()
  if red.lower() == 'whero': 
    print("thats correct " + name)
@@ -68,7 +68,7 @@ if played_before == "1":
  else: 
     print("The correct answer is Kowhai ") 
 
- print(list[1])   
+ print(list[2])   
  green = input() 
  if green.lower() == 'kakariki': 
     print("Correct") 
@@ -77,12 +77,24 @@ if played_before == "1":
    
 
 
- print(list[1])   
+ print(list[3])   
  orange = input() 
  if orange.lower() == 'karaka': 
     print("Correct") 
  else: 
     print("The colour orange in te reo Maori is know as karaka")  
+
+
+ print(list[4])   
+ black = input() 
+ if black.lower() == 'pango': 
+    print("Correct") 
+ else: 
+    print("The colour black in te reo Maori is know as pango")   
+    
+    
+    
+    
     print("Thanks for playing!") 
 
 
@@ -143,8 +155,7 @@ elif played_before == "3":
   Ua = input("\nA.Foggy \nB.Sunny\nC.Rainy\nD.Thunderstorm" + "\n")
   if Ua.lower =='C' or "Rainy": 
     print("Correct, well done " + name) 
-    score+=1 
-    print("Your score is now" , score)
+
   else: 
     print("The correct answer was C. Rainy" )  
 
