@@ -23,11 +23,11 @@ def level (question):
       return response 
     else:
       print("Please select a difficulty"  + "\n")
-      print("1") 
+      print("1 is easy") 
       time.sleep(.5) 
-      print("2") 
+      print("2 is intermediate") 
       time.sleep(.5) 
-      print("3")  
+      print("3 is advanced")  
 
 # Sequence 2 
 # Purpose: This sequence asks the user for a name and stores it as a variable
@@ -40,10 +40,11 @@ time.sleep(.5)
 print("Today we are going to learn Te Reo Maaori!") 
 time.sleep(1.5)
 
+# Sequence 3 
+# Purpose: This sequence asks the user a series of questions at an easy level 
 played_before = level("What difficulty would fit you best, 1, 2 or 3" + "\n") 
 
-
-
+# This list stores all the questions in the easy level
 list = [ "What colour is red in Te Reo Maori?", "What colour is yellow in Te Reo Maaori?","What colour is green in Te Reo Maaori?", "What colour is orange in Te Reo Maaori?", "What colour is black in Te reo Maaori?"]
 
 if played_before == "1": 
@@ -75,15 +76,12 @@ if played_before == "1":
  else: 
    print("The correct answer is kakariki")
    
-
-
  print(list[3])   
  orange = input() 
  if orange.lower() == 'karaka': 
     print("Correct") 
  else: 
     print("The colour orange in te reo Maori is know as karaka")  
-
 
  print(list[4])   
  black = input() 
@@ -93,59 +91,57 @@ if played_before == "1":
     print("The colour black in te reo Maori is know as pango")   
     
     
-    
-    
     print("Thanks for playing!") 
-
-
-  
-
-
+# Sequence 3: 
+# This sequence asks questions at the intermediate difficulty 
+# Multiple choice selection
 elif played_before == "2": 
   print("You have selected the intermediate difficulty for this subject!")  
+  
   print("Which word has the meaning of 'Children'") 
 
-  Children = input("\nA. Tama \nB. Poro \nC. Poroiki\nD. Tamariki\n")
-  if Children.lower =='D': 
+  Children = input("\nA. Tama \nB. Poro \nC. Poroiki\nD. Tamariki\n").lower()
+  if Children =="d": 
     print("Correct, well done " + name) 
   else: 
     print("Incorrect, the correct answer was D. Tamariki?")
 
   print("What is the maaori word for 'car'") 
-  car = input("\nA. Motuka \nB. Ruaturu \nC. Kahina \nD.Onorere\n")
-  if car.lower =='A': 
+  car = input("\nA. Motuka \nB. Ruaturu \nC. Kahina \nD. Onorere\n").lower()
+  if car =="a": 
     print("Correct, well done " + name) 
   else: 
     print("Incorrect, the correct answer was A. Motuka")
 
   print("What is the maaori word for 'New Zealand?'") 
-  Aotearoa = input("\nA. Motu \nB. Aotearoa \nC. Nenuna \nD. Anaterura\n")
-  if Aotearoa.lower =='B': 
+  Aotearoa = input("\nA. Motu \nB. Aotearoa \nC. Nenuna \nD. Anaterura\n").lower()
+  if Aotearoa =="b":
     print("Correct, well done " + name) 
   else: 
     print("Incorrect, the correct answer was B. Aotearoa") 
 
   print("What is the maaori word for 'Man?'") 
 
-  man = input("\nA. Waahine \nB. Werata \nC. Tapu \nD. Tangata\n")
-  if man.lower =='C': 
+  man = input("\nA. Waahine \nB. Werata \nC. Tapu \nD. Tangata\n").lower()
+  if man.lower =="c": 
     print("Correct, well done " + name) 
   else: 
     print("Incorrect, the correct answer was C. Tapu ") 
 
   print("What is the maaori word for 'Time?'") 
-  Wa = input("\nA. Wā \nB. Mā \nC. Tā \nD. Ngā\n")
-  if Wa.lower =='A': 
+  Wa = input("\nA. Wā \nB. Mā \nC. Tā \nD. Ngā\n").lower()
+  if Wa.lower =="a": 
     print("Correct, well done " + name) 
   else: 
     print("Incorrect, the correct answer was A. Wā ")
-
+# Sequence 4: this sequence asks the user questions at an advanced difficulty 
+# Multiple choice selection
 elif played_before == "3": 
   print("You have selected the Advanced difficulty for this subject!") 
   print("What is the second line of our national anthem?") 
 
   Anthem = input("\nA. Manaakitia mai \nB. O ngā iwi mātou rā\nC. Kia tau tō atawhai\nD. E Ihowā Atua" + "\n")
-  if Anthem.lower() =="B" or 'O nga iwi matou ra' : 
+  if Anthem.lower() =="b" or 'O nga iwi matou ra' : 
     print("Correct, well done " + name)
   else: 
     print("The correct answer was B. O ngā iwi mātou rā" )  
@@ -153,23 +149,22 @@ elif played_before == "3":
   print("If it's Ua outside it is what?") 
 
   Ua = input("\nA.Foggy \nB.Sunny\nC.Rainy\nD.Thunderstorm" + "\n")
-  if Ua.lower =='C' or "Rainy": 
+  if Ua.lower =='c' or "Rainy": 
     print("Correct, well done " + name) 
 
   else: 
     print("The correct answer was C. Rainy" )  
-
   
   print("If you were going for a hīkoi you are...") 
   hikoi = input("\nA.Going to the toilet \nB.Going for a walk\nC.Going for a swim\nD.Going for a shop" + "\n")
-  if hikoi.lower =='B': 
+  if hikoi.lower =='b': 
     print("Correct, well done " + name)
   else: 
     print("The correct answer was B. Going for a walk")  
   
   print("If someone asked you to open the door in Te Reo - what would they say?") 
   door = input("\nA.Horoia ō ringaringa \nB.Kuhu mai ki roto\nC.Haere atu\nD.Huakina te kūaha" + "\n")
-  if door.lower =='D': 
+  if door.lower =='d': 
     print("Correct, well done " + name) 
   else: 
     print("Incorrect; the correct answer was D. Huakina te kūaha") 
