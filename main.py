@@ -123,7 +123,7 @@ elif played_before == "2":
   print("What is the maaori word for 'Man?'") 
 
   man = input("\nA. Waahine \nB. Werata \nC. Tapu \nD. Tangata\n").lower()
-  if man.lower =="c": 
+  if man =="c": 
     print("Correct, well done " + name) 
   else: 
     print("Incorrect, the correct answer was C. Tapu ") 
